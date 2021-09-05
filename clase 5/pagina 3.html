@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clase 4</title>
+    <style>
+        table, td{
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="inicio 2">Tablas</h1>
+    
+    <table><!--inicio de la tabla de "excel"-->
+         <th>Titulo</th>
+         <th colspan="3">Titulo 2</th><!--etiqueta colspan sirve para saber cuantos espacios va a ocupar dicha etiqueta-->
+
+         <tr><!--creacion de columnas-->
+            <td>fila 1</td><!--creacion de fila-->
+            <td>celda 1</td><!--creacion de celda-->
+            <td>celda 1</td>
+            <td>celda 1</td>
+            <td>fila 1</td>
+          </tr>
+
+             <tr>
+              <td colspan="5">fila 2</td>
+             </tr>
+
+          <tr>
+            <td>fila 3</td>
+            <td colspan="2">fila 3</td>
+          </tr>
+
+
+    </table>
+    
+<hr>
+
+<table>
+
+    <thead><!--etiqueta sirve para que el contenido dentro siempre sea la cabezera, sin importar el lugar donde se escribe-->
+        <tr>
+            <th>titulo 1</th>
+            <th>titulo 2</th>
+            <th>titulo 3</th>
+        </tr>
+    </thead>
+
+    <tbody><!--etiqueta sirve para que siempre se el contenido debajo de la cabezera-->
+        <td>celda</td>
+        <td>celda</td>
+        <td>celda</td>
+    </tbody>
+
+    <tfoot><!--esta etiqueta sirve para que el contenido se siempreo lo que este por debajo de la tabla-->
+        <td>celda 1</td>
+        <td>celda 2</td>
+        <td>celda 3</td>
+    </tfoot>
+
+    <tr>
+        <td colspan="3" rowspan="2">fila 4</td><!--la etiqueta rowspan sirve para que baje las cantidades que uno desea dicha celda-->
+    </tr>
+    <tr>
+        <td>lo que sea</td>
+        <td>lo que sea 2</td>
+        <td>lo que sea 3</td>
+    </tr>
+</table>
+
+<a href="pagina 2.html">
+    <button>Regresar</button>
+</a>
+
+</body>
+</html>
