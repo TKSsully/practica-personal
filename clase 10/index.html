@@ -1,14 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clase 10</title>
 </head>
+
 <body>
 
-    
-    
+    <h1>Formularios</h1>
+
+    <div>
+        <form action="" autocomplete="off">
+
+            <fieldset>
+                <legend> Datos</legend>
+                <input type="text" name="Datos" id="nombre" placeholder="pedro pica papas" required autofocus>
+                <!--la etiqueta input es para seleccionar que tipo de accion quieres ejecutar en el formulario-->
+                <label for="nombre"> Nombre(s)</label>
+                <!-- la etiqueta label para ingresar los datos que quieras a la etiqueta input y se vea en la pagina-->
+                <input type="text" name="Datos" id="apellido">
+                <label for="apellido"> Apellido(s)</label>
+            </fieldset>
+
+
+            <fieldset>
+                <legend> Que team eres?</legend>
+                <label for="kong"> Team kong</label>
+                <input type="radio" name="Team" id="kong">
+                <label for="god"> Team godzilla</label>
+                <input type="radio" name="Team" id="god" checked>
+                <label for="otros"> otros</label>
+                <input type="radio" name="Team" id="otros">
+            </fieldset>
+
+
+
+            <fieldset>
+                <legend> Que te gusta hacer en tu tiempo libre?</legend>
+                <label for="series"> Series</label>
+                <input type="checkbox" name="entretenimiento" id="series">
+
+                <label for="libros"> Libros</label>
+                <input type="checkbox" name="entretenimiento" id="libros">
+
+                <label for="pelis"> Peliculas</label>
+                <input type="checkbox" name="entretenimiento" id="pelis">
+            </fieldset>
+
+
+
+            <fieldset>
+                <legend>De donde eres?</legend>
+                <select name="pais" id="pais" size="2" multiple>
+                    <option value="Mexico" selected> Mexico</option>
+                    <option value="Estados unidos"> Estados unidos</option>
+                    <option value="Peru"> Peru</option>
+                    <option value="Guatemala"> Guatemala</option>
+                    <option value="Venezuela"> Venezuela</option>
+                    <option value="Canada"> Canada</option>
+                    <option value="Argentina"> Argentina</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>buscar</legend>
+                <label for="buscar"> Busca tu informacion</label>
+                <input type="text" name="buscar" id="buscar" list="tipos">
+                <datalist id="tipos">
+                    <option value="Perro"> Perro </option>
+                    <option value="Perro"> Perro </option>
+                    <option value="Perro"> Perro </option>
+                    <option value="Perro"> Perro </option>
+                    <option value="Perro"> Perro </option>
+                </datalist>
+            </fieldset>
+
+            <fieldset>
+                <input type="range" name="" id="" value="150" min="0" max="300">
+            </fieldset>
+
+
+            <fieldset>
+                <textarea name="mensaje" id="mensaje" cols="40" rows="5">
+
+            </textarea>
+            </fieldset>
+
+
+            <label for=""></label>
+            <input type="submit" value="submit"><br><br>
+
+            <input type="password" name="" id=""><br><br>
+
+            <input type="reset" value="reset"><br><br>
+
+            <input type="color" name="" id=""><br><br>
+
+            <input type="date" name="" id=""><br>
+
+            <input type="datetime-local" name="" id=""><br><br>
+
+            <input type="email" name="" id=""><br><br>
+
+            <input type="file" name="" id=""><br><br>
+
+            <input type="number" name="" id="" min="20" max="50"><br><br>
+
+            <input type="number" name="" id=""><br><br>
+
+        </form>
+    </div>
+
+
 </body>
+
 </html>
